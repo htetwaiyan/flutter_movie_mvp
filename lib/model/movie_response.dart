@@ -34,9 +34,9 @@ class Results {
   int voteCount;
   int id;
   bool video;
-  double voteAverage;
+  String voteAverage;
   String title;
-  double popularity;
+  String popularity;
   String posterPath;
   String originalLanguage;
   String originalTitle;
@@ -66,9 +66,9 @@ class Results {
     voteCount = json['vote_count'];
     id = json['id'];
     video = json['video'];
-    voteAverage = json['vote_average'];
+    voteAverage = json['vote_average'].toString();
     title = json['title'];
-    popularity = json['popularity'];
+    popularity = json['popularity'].toString();
     posterPath = json['poster_path'];
     originalLanguage = json['original_language'];
     originalTitle = json['original_title'];
